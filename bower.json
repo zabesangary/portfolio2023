@@ -1,0 +1,31 @@
+{
+  "name": "portweb",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "fullpage.js": "^2.8.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3",
+    "animate.css": "^3.5.2",
+    "components-font-awesome": "^4.6.3",
+    "fancybox": "^2.1.5",
+    "lightbox2": "^2.8.2"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "font-awesome": "fontawesome#^4.6.3",
+    "components-font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.6"
+  }
+}
