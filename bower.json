@@ -10,7 +10,8 @@
     "animate.css": "^3.5.2",
     "components-font-awesome": "^4.6.3",
     "fancybox": "^2.1.5",
-    "lightbox2": "^2.8.2"
+    "lightbox2": "^2.8.2",
+    "bootstrap-validator": "^0.11.9"
   },
   "overrides": {
     "bootstrap-sass": {
