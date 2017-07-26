@@ -26,8 +26,8 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-    <?php require 'footer.php';?>
   </head>
+  <META http-equiv="refresh" content="2;URL=https://zabesangary.github.io/portfolio2017/form-process.php">
   <body><script id="__bs_script__">//<![CDATA[
     document.write("<script async src='/browser-sync/browser-sync-client.2.12.12.js'><\/script>".replace("HOST", location.hostname));
 //]]></script>
@@ -295,74 +295,6 @@ My clients have found that launching with a well considered and well developed f
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-    <?php <?php
-
-    $errorMSG = "";
-
-    // NAME
-    if (empty($_POST["name"])) {
-        $errorMSG = "Name is required ";
-    } else {
-        $name = $_POST["name"];
-    }
-
-    // EMAIL
-    if (empty($_POST["email"])) {
-        $errorMSG .= "Email is required ";
-    } else {
-        $email = $_POST["email"];
-    }
-
-    // MSG SUBJECT
-    if (empty($_POST["msg_subject"])) {
-        $errorMSG .= "Subject is required ";
-    } else {
-        $msg_subject = $_POST["msg_subject"];
-    }
-
-
-    // MESSAGE
-    if (empty($_POST["message"])) {
-        $errorMSG .= "Message is required ";
-    } else {
-        $message = $_POST["message"];
-    }
-
-    //Add your email here
-    $EmailTo = "zsangary@gmail.com";
-    $Subject = "New Message Received";
-
-    // prepare email body text
-    $Body = "";
-    $Body .= "Name: ";
-    $Body .= $name;
-    $Body .= "\n";
-    $Body .= "Email: ";
-    $Body .= $email;
-    $Body .= "\n";
-    $Body .= "Subject: ";
-    $Body .= $msg_subject;
-    $Body .= "\n";
-    $Body .= "Message: ";
-    $Body .= $message;
-    $Body .= "\n";
-
-    // send email
-    $success = mail($EmailTo, $Subject, $Body, "From:".$email);
-
-    // redirect to success page
-    if ($success && $errorMSG == ""){
-       echo "success";
-    }else{
-        if($errorMSG == ""){
-            echo "Something went wrong :(";
-        } else {
-            echo $errorMSG;
-        }
-    }
-
-    ?>
-?>
   </body>
 
 </html>
