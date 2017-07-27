@@ -91,6 +91,7 @@
     color: #FF4081;
 }
 
+
  a {
     // color: #f50000 !important;
     text-decoration: none;
@@ -265,4 +266,118 @@ li,
   margin: 4px 6px;
   position: absolute;
   color: #FF4081;
+}
+
+.textarea-font-awsm:before {
+  content: "\f040";
+  font-family: FontAwesome;
+  font-size: 16px;
+  margin: 4px 6px;
+  position: absolute;
+  color: #FF4081;
+}
+
+.custom-width {
+  width: 360px;
+  background: rgb(249, 246, 225);
+  border: none;
+}
+
+/*contact submit button*/
+
+.submit-btn {
+  background: #FF4081;
+  color: white;
+  height: 34px;
+}
+
+/*arrow-down*/
+
+.arrow-down {
+   font-size: 32px;
+   font-weight: 500;
+   top: 420px;
+   left: -49px;
+   color: whitesmoke;
+}
+
+.terminal {
+  font-size: 111px;
+  position: absolute;
+  margin: 46px 100px;
+}
+
+.hi-buttons {
+  height: 30px;
+  border-radius: 1px;
+  background-color: #f5f5f5;
+  border: 1px solid white;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 2px;
+  width: 129px;
+  line-height: 0;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 11px;
+  color: #000;
+}
+
+p {
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.custom-col-pad {
+  color: white;
+  padding: 50px;
+}
+
+.skills-desc{
+    margin: 3%;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 9;
+}
+
+
+
+.figure-caption {
+  width: auto;
+  height: auto;
+}
+.skills-desc li{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0 3px;
+    padding: 5px;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+
+}
+.margin-form{
+  margin: 0 100px;
+}
+form {
+  color: black;
+}
+@media screen and (max-width: 580px){
+  .hibox-div button{
+    display: inline;
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 770px){
+
+  .icons-intro {
+    display: none;
+  }
+  .margin-form{
+    margin: 0 0 0 20px;
+  }
 }
